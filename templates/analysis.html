@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Koinvesting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="주식초보를 위한 기업의 재무제표를 분석해주는 사이트입니다.">
+		<meta property="og:type" content="website"> 
+		<meta property="og:title" content="Koinvesting">
+		<meta property="og:description" content="주식초보를 위한 기업의 재무제표를 분석해주는 사이트입니다.">
+		<meta property="og:image" content="{{ url_for('static', filename='image/Buffett.jpg') }}">
+		<meta property="og:url" content="https://www.koinvesting.com">
+		<meta name="naver-site-verification" content="5063fa09c16e93723df52b5f3c41c9e6f0de0f1a" /><!--네이버 웹마스터-->
+		<meta name="google-site-verification" content="CMPf3DuiycYNe3o1gXT2Aegu8hHyDgSYccz35KxMZo0" /> <!--구글 웹마스터-->
+		<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='image/favicon.png') }}" rel="icon" type="png">
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/" class="logo"><strong>Koinvesting</strong></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/">Home</a></li>
+					<li><a href="analysis.html">재무제표분석</a></li>
+					<li><a href="golden_cross.html">골든크로스 종목</a></li>
+					<li><a href="Investment_Status.html">투자현황</a></li>
+				</ul>
+			</nav>
+
+			<ins class="kakao_ad_area" style="display:none;" 
+			data-ad-unit    = "DAN-t4cbzf6u5mbd" 
+			data-ad-width   = "320" 
+			data-ad-height  = "100"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		   
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<header>
+						<h1>간단한 기본적 분석</h1>
+						<p class="info">
+							전인구경제연구소 유튜브의 재무제표분석을 참고하였습니다.
+							<a href="https://www.youtube.com/watch?v=x_WrhwvRoNY&t=4s" class="icon fa-youtube"><span class="label"> Youtube</span></a>
+						</p>
+					</header>
+					미국 주식의 경우도 분석 가능합니다. 입력 예시 : 삼성전자, 005930, KO
+					<section>																			
+						<form method="POST" onsubmit=false>
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="get_text" id="name" value="" placeholder="기업의 종목명 또는 종목코드를 입력해주세요">
+									<br>										
+									<button type="submit">분석하기</button>
+									<br><br>
+																															
+									{{get_info|safe}}
+																		
+									{{get_summary|safe}}
+																												
+									{{data|safe}}
+																		
+									<details>
+										<summary>분석 결과</summary>
+										<p>{{get_analysis|safe}}</p>
+									</details>				
+																		
+									{{get_explain|safe}}
+																												
+								</div>								
+							</div>
+						</form>
+					</section>
+
+					
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://www.instagram.com/ggam._.chong/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+			<div class="copyright">
+				&copy; 2020 All Right Reserved <br> 제작자 : 김준우<br>
+				기능 개선 및 피드백 문의 :bababrll@naver.com<br>
+				문의주시면 최선을 다해서 반영해보겠습니다.
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}" > </script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js')}}" > </script>
+		<script src="{{ url_for('static', filename='js/skel.min.js') }}" > </script>
+		<script src="{{ url_for('static', filename='js/util.js') }}" > </script>			
+		<script src="{{ url_for('static', filename='js/main.js') }}" > </script>						
+
+	</body>
+</html>

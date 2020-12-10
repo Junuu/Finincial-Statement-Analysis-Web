@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Koinvesting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="주식초보를 위한 기업의 재무제표를 분석해주는 사이트입니다.">
+		<meta property="og:type" content="website"> 
+		<meta property="og:title" content="Koinvesting">
+		<meta property="og:description" content="주식초보를 위한 기업의 재무제표를 분석해주는 사이트입니다">
+		<meta property="og:image" content="{{ url_for('static', filename='image/Buffett.jpg') }}">
+		<meta property="og:url" content="https://www.koinvesting.com">
+		<meta name="naver-site-verification" content="5063fa09c16e93723df52b5f3c41c9e6f0de0f1a" /><!--네이버 웹마스터-->
+		<meta name="google-site-verification" content="CMPf3DuiycYNe3o1gXT2Aegu8hHyDgSYccz35KxMZo0" /> <!--구글 웹마스터-->
+		<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='image/favicon.png') }}" rel="icon" type="png">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/" class="logo"><strong>Koinvesting</strong></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+			<ins class="kakao_ad_area" style="display:none;" 
+		 	data-ad-unit    = "DAN-qhsvnrm43azn" 
+ 			data-ad-width   = "320" 
+ 			data-ad-height  = "100"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		   
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/">Home</a></li>
+					<li><a href="analysis.html">재무제표분석</a></li>
+					<li><a href="golden_cross.html">골든크로스 종목</a></li>
+					<li><a href="Investment_Status.html">투자현황</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h1>투자현황</h1>
+						<p><a href="https://docs.google.com/spreadsheets/d/1Z5IVuRocTu2ajmen8jQEIy-IQ7U4P_reLgsng3oVtVQ/edit?usp=sharing" target = "_blank">투자현황 바로가기</a></p>
+						투자현황 바로가기를 누르시면 종목들의 추적시작가와 날짜별 종가를 볼 수 있습니다.<br><br>
+						골든크로스종목을 모두 매수하는것이 아니며 추가적으로 분석 후 투자중이며 최소 한달정도 후 투자 현황을 개시할 예정입니다.<br><br>
+						매수 후 6일 이후 매도시 평균 수익률 : 3.5%<br><br>
+						<ul class="actions">
+							<li><a href="#" class="button alt">누적 수익률= -0.14%</a></li>
+						</ul>
+					</header>
+			</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">						
+						<li><a href="https://www.instagram.com/ggam._.chong/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<div class="copyright">
+						&copy; 2020 All Right Reserved <br> 제작자 : 김준우<br>
+						기능 개선 및 피드백 문의 :bababrll@naver.com<br>
+						문의주시면 최선을 다해서 반영해보겠습니다.
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}" > </script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js')}}" > </script>
+		<script src="{{ url_for('static', filename='js/skel.min.js') }}" > </script>
+		<script src="{{ url_for('static', filename='js/util.js') }}" > </script>			
+		<script src="{{ url_for('static', filename='js/main.js') }}" > </script>						
+
+	</body>
+</html>

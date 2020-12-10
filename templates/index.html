@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Koinvesting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="주식초보를 위한 기업의 재무제표를 분석해주는 사이트입니다.">
+		<meta property="og:type" content="website"> 
+		<meta property="og:title" content="Koinvesting">
+		<meta property="og:description" content="주식초보를 위한 기업의 재무제표를 분석해주는 사이트입니다">
+		<meta property="og:image" content="{{ url_for('static', filename='image/Buffett.jpg') }}">
+		<meta property="og:url" content="https://www.koinvesting.com">
+		<meta name="naver-site-verification" content="5063fa09c16e93723df52b5f3c41c9e6f0de0f1a" /><!--네이버 웹마스터-->
+		<meta name="google-site-verification" content="CMPf3DuiycYNe3o1gXT2Aegu8hHyDgSYccz35KxMZo0" /> <!--구글 웹마스터-->
+		<script data-ad-client="ca-pub-8265902416715650" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!--구글 애드센스 심사-->
+		<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='image/favicon.png') }}" rel="icon" type="png">
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/" class="logo"><strong>Koinvesting</strong></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/">홈</a></li>
+					<li><a href="analysis.html">재무제표분석</a></li>
+					<li><a href="golden_cross.html">골든크로스 종목</a></li>
+					<li><a href="Investment_Status.html">투자현황</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner" style="background-image: url('static/image/background_img.png')">
+				<div class="inner">
+					<h1>주식 초보자를 위한 기업의 재무제표 분석</h1>
+					<h1>골든크로스 종목 분석</h1>
+					<ul class="actions">
+						<li><a href="#one" class="button alt scrolly big">Continue</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<article id="one" class="post style1">
+				<div class="image">
+					<img src="{{ url_for('static', filename='image/Buffett.jpg') }}" alt="" data-position="30% center" />
+				</div>
+				<div class="content">
+					<div class="inner">
+						<header>
+							<h2>Koinvesting과 함께 투자해요</h2>
+							<p class="info">당기순이익이 성장하는 기업만을 선호합니다.</p>
+						</header>
+						<ul class="actions">
+							<li><a href="analysis.html" class="button alt">기업의 재무제표 분석</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="golden_cross.html" class="button alt">골든 크로스 종목</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="Investment_Status.html" class="button alt">투자 현황</a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.instagram.com/ggam._.chong/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<div class="copyright">
+					&copy; 2020 All Right Reserved <br> 제작자 : 김준우<br>
+					기능 개선 및 피드백 문의 :bababrll@naver.com<br>
+					문의주시면 최선을 다해서 반영해보겠습니다.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}" > </script>
+			<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js')}}" > </script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}" > </script>
+			<script src="{{ url_for('static', filename='js/util.js') }}" > </script>			
+			<script src="{{ url_for('static', filename='js/main.js') }}" > </script>						
+
+	</body>
+</html>
